@@ -1,3 +1,7 @@
-p {
+* {
     font-family: Comic Sans MS
+}
+
+h {
+    text-align: center
 }
