@@ -2,6 +2,10 @@
     font-family: Comic Sans MS
 }
 
-h {
+h1 {
+    text-align: center
+}
+
+h3 {
     text-align: center
 }
