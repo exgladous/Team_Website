@@ -14,6 +14,13 @@
 h2{
     color: darkred;
     background: hotpink;
+    text-align: center
+}
+
+h3{
+    color: goldenrod;
+    background: aqua;
+    weight: bold;
 }
 
 #title {
