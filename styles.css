@@ -10,3 +10,7 @@
 #parared {
     color: red;
 }
+
+#title {
+    border-bottom: 0;
+}
