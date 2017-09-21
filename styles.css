@@ -13,6 +13,14 @@
 
 h2{
     color: darkred;
+    background: hotpink;
+    text-align: center
+}
+
+h3{
+    color: palegreen;
+    background: aqua;
+    weight: bold;
 }
 
 #title {
