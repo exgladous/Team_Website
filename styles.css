@@ -11,12 +11,16 @@
     color: red;
 }
 
-#parapurple {
-    color: rebeccapurple;
+h2{
+    color: darkred;
+    background: hotpink;
+    text-align: center
 }
 
-h2{
-    background: lightgrey;
+h3{
+    color: palegreen;
+    background: aqua;
+    weight: bold;
 }
 
 #title {
