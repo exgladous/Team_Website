@@ -11,9 +11,12 @@
     color: red;
 }
 
+#parapurple {
+    color: rebeccapurple;
+}
+
 h2{
-    color: darkred;
-    background: hotpink;
+    background: lightgrey;
 }
 
 #title {
