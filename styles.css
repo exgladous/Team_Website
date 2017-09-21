@@ -11,6 +11,10 @@
     color: red;
 }
 
+h2{
+    color: darkred;
+}
+
 #title {
     border-bottom: 0;
 }
