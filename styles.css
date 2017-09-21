@@ -14,3 +14,9 @@
 #title {
     border-bottom: 0;
 }
+
+ol, li {
+    width:200px;
+    margin:0 auto;
+    text-align:left;
+}
