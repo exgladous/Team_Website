@@ -11,13 +11,12 @@
     color: red;
 }
 
-h2{
-    color: darkred;
-    background: hotpink;
+h2 {
+    background: lightgrey;
     text-align: center
 }
 
-h3{
+h3 {
     color: palegreen;
     background: aqua;
     weight: bold;
