@@ -6,8 +6,8 @@
 function dateMessage() {
 
     var today = new Date(),
-        end = new Date(datestring),
-
+        monthlist = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"],
+        daylist = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
 }
 
 
@@ -15,14 +15,13 @@ function dateMessage() {
 
 function birthdaycountDown(datestring) {
 
+    var end = new Date(datestring),
         date = today.getDate(),
         datee = end.getDate(),
 
-        daylist = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
         day = daylist[today.getDay()],
         daye = daylist[end.getDay()],
 
-        monthlist = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"],
         month = monthlist[today.getMonth()],
         monthe = monthlist[end.getMonth()],
 
@@ -48,4 +47,3 @@ function birthdaycountDown(datestring) {
     return "Today is " + day + ", " + month + " " + date + ", " + year + "<br> Your end date is " + daye + ", " + monthe + " " + datee + ", " + yeare + "<br>" + "There are " + days + " days, " + hours + " hours, " + minutes + " minutes, and " + seconds + " seconds until the end date.";
 
 }
-
