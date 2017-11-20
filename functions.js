@@ -44,6 +44,6 @@ function birthdaycountDown(datestring) {
         rsuf = rmuf % 1000,
         seconds = Math.floor(suf);
 
-    return "Today is " + day + ", " + month + " " + date + ", " + year + "<br> Your end date is " + daye + ", " + monthe + " " + datee + ", " + yeare + "<br>" + "There are " + days + " days, " + hours + " hours, " + minutes + " minutes, and " + seconds + " seconds until the end date.";
+    return "Today is " + day + ", " + month + " " + date + ", " + year + "<br> Your end date is " + daye + ", " + monthe + " " + datee + ", " + yeare + "<br>" + "There are " + days + " days, " + hours + " hours, " + minutes + " minutes, and " + seconds + " seconds until my next birthday.";
 
 }
