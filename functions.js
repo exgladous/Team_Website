@@ -3,13 +3,17 @@
 
 // 2. Print Date
 
-
-// 3. Count Down
-
-function countDown(datestring) {
+function dateMessage() {
 
     var today = new Date(),
         end = new Date(datestring),
+
+}
+
+
+// 3. Count Down
+
+function birthdaycountDown(datestring) {
 
         date = today.getDate(),
         datee = end.getDate(),
