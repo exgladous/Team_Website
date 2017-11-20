@@ -1,4 +1,9 @@
 // 1. Random Greeting
+  function randomGreeting() {
+        var salutation = ["Howdy!", "Greetings!", "Hola!", "Bonjour!", "Take me to your leader!", "!مرحبا", "你好！", "Здравствуйте!", "Sveiki!", "Алло!"];
+        var rand = Math.floor(Math.random() * 10);
+        return salutation[rand], "<br>"
+  }
 
 
 // 2. Print Date
