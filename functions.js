@@ -55,5 +55,4 @@ function birthdaycountDown(datestring) {
 
     return "There are " + days + " days, " + hours + " hours, " + minutes + " minutes, and " + seconds + " seconds until the end date.";
 
-
 }
