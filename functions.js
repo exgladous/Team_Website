@@ -1,10 +1,10 @@
 // 1. Random Greeting
 
-  function randomGreeting() {
-        var salutation = ["Howdy!", "Greetings!", "Hola!", "Bonjour!", "Take me to your leader!", "!مرحبا", "你好！", "Здравствуйте!", "Sveiki!", "Алло!"];
-        var rand = Math.floor(Math.random() * 10);
-        return salutation[rand]
-  }
+function randomGreeting() {
+    var salutation = ["Howdy!", "Greetings!", "Hola!", "Bonjour!", "Take me to your leader!", "!مرحبا", "你好！", "Здравствуйте!", "Sveiki!", "Алло!"];
+    var rand = Math.floor(Math.random() * 10);
+    return salutation[rand]
+}
 
 
 
@@ -13,15 +13,15 @@
 function dateMessage() {
 
     var today = new Date();
-        var day = today.getDay();
-        var ddate = today.getDate();
-        var listday = ["Sunday", "Monday", "Tuesday", "Wedenesday", "Thursday", "Friday", "Saturday"]
-        var month = today.getMonth() + 1;
-        var listmonth = ["December", "January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November"]
-        var year = today.getFullYear();
-        document.write(" Today date is ", listday[day], " ", listmonth[month], " ", ddate + ", ", year);
+    var day = today.getDay();
+    var ddate = today.getDate();
+    var listday = ["Sunday", "Monday", "Tuesday", "Wedenesday", "Thursday", "Friday", "Saturday"]
+    var month = today.getMonth() + 1;
+    var listmonth = ["December", "January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November"]
+    var year = today.getFullYear();
+    return " Today date is ", listday[day], " ", listmonth[month], " ", ddate + ", ", year
 
-return "Today is " + day + ", " + month + " " + ddate
+    //return "Today is " + day + ", " + month + " " + ddate
 
 }
 
