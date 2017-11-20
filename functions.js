@@ -1,4 +1,12 @@
 // 1. Random Greeting
+<<<<<<< HEAD
+=======
+  function randomGreeting() {
+        var salutation = ["Howdy!", "Greetings!", "Hola!", "Bonjour!", "Take me to your leader!", "!مرحبا", "你好！", "Здравствуйте!", "Sveiki!", "Алло!"];
+        var rand = Math.floor(Math.random() * 10);
+        return salutation[rand]
+  }
+>>>>>>> origin/master
 
 
 // 2. Print Date
@@ -16,6 +24,10 @@ function dateMessage() {
 
 return "Today is " + day + ", " + month + " " + ddate
 
+<<<<<<< HEAD
+=======
+return "Today is " + day + ", " + month + " " + date + ", " + year;
+>>>>>>> origin/master
 }
 
 
@@ -52,6 +64,7 @@ function birthdaycountDown(datestring) {
         rsuf = rmuf % 1000,
         seconds = Math.floor(suf);
 
-    return <br> Your end date is " + daye + ", " + monthe + " " + datee + ", " + yeare + "<br>" + "There are " + days + " days, " + hours + " hours, " + minutes + " minutes, and " + seconds + " seconds until the end date.";
+    return "There are " + days + " days, " + hours + " hours, " + minutes + " minutes, and " + seconds + " seconds until the end date.";
+
 
 }
