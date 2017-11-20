@@ -6,6 +6,8 @@
         return salutation[rand]
   }
 
+
+
 // 2. Print Date
 
 function dateMessage() {
@@ -19,7 +21,7 @@ function dateMessage() {
         var year = today.getFullYear();
         document.write(" Today date is ", listday[day], " ", listmonth[month], " ", ddate + ", ", year);
 
-return "Today is " + day + ", " + month + " " + date + ", " + year;
+return "Today is " + day + ", " + month + " " + ddate
 
 }
 
@@ -28,14 +30,15 @@ return "Today is " + day + ", " + month + " " + date + ", " + year;
 
 function birthdaycountDown(datestring) {
 
-    var today = new Date(),
-        end = new Date(datestring),
-
+    var end = new Date(datestring),
         date = today.getDate(),
         datee = end.getDate(),
 
-        date = today.getDate(),
-        datee = end.getDate(),
+        day = daylist[today.getDay()],
+        daye = daylist[end.getDay()],
+
+        month = monthlist[today.getMonth()],
+        monthe = monthlist[end.getMonth()],
 
         year = today.getFullYear(),
         yeare = end.getFullYear();
@@ -57,5 +60,6 @@ function birthdaycountDown(datestring) {
         seconds = Math.floor(suf);
 
     return "There are " + days + " days, " + hours + " hours, " + minutes + " minutes, and " + seconds + " seconds until the end date.";
+
 
 }
