@@ -26,13 +26,19 @@ function dateMessage() {
 
 // 3. Count Down
 
-function birthdaycountDown(datestring) {
+function birthdaycountDown(birthdate) {
 
     var today = new Date(),
-        end = new Date(datestring),
+        bd = new Date(birthdate),
 
-        duf = (today.getTime() - end.getTime()) / (24 * 60 * 60 * 1000),
-        rduf = (today.getTime() - end.getTime()) % (24 * 60 * 60 * 1000),
+        // age = today.getYear() - bd.getYear(),
+
+        bd = bd.setFullYear(today.getYear() + 1, 0, 21),
+
+        end = new Date(bd),
+
+        duf = (end.getTime() - today.getTime()) / (24 * 60 * 60 * 1000),
+        rduf = (end.getTime() - today.getTime()) % (24 * 60 * 60 * 1000),
         days = Math.floor(duf),
 
         huf = rduf / (60 * 60 * 1000),
@@ -47,6 +53,6 @@ function birthdaycountDown(datestring) {
         rsuf = rmuf % 1000,
         seconds = Math.floor(suf);
 
-    return "There are " + days + " days, " + hours + " hours, " + minutes + " minutes, and " + seconds + " seconds until my next birthday";
+    return "There are " + days + " day(s), " + hours + " hour(s), and " + minutes + " minute(s) until my next birthday";
 
 }
