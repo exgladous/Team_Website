@@ -11,28 +11,14 @@ function randomGreeting() {
 // 2. Print Date
 
 function dateMessage() {
-
     var today = new Date();
-<<<<<<< HEAD
     var day = today.getDay();
     var ddate = today.getDate();
     var listday = ["Sunday", "Monday", "Tuesday", "Wedenesday", "Thursday", "Friday", "Saturday"]
     var month = today.getMonth() + 1;
-    var listmonth = ["December", "January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November"]
+    var listmonth = ["December", "January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November"];
     var year = today.getFullYear();
-    return " Today date is ", listday[day], " ", listmonth[month], " ", ddate + ", ", year
-
-    //return "Today is " + day + ", " + month + " " + ddate
-=======
-        var day = today.getDay();
-        var ddate = today.getDate();
-        var listday = ["Sunday", "Monday", "Tuesday", "Wedenesday", "Thursday", "Friday", "Saturday"]
-        var month = today.getMonth() + 1;
-        var listmonth = ["December", "January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November"];
-        var year = today.getFullYear();
-        return "Today is " + listday[day] + ", " + listmonth[month] + " " + ddate + ", " + year
->>>>>>> origin/master
-
+    return "Today is " + listday[day] + ", " + listmonth[month] + " " + ddate + ", " + year
 }
 
 
