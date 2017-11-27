@@ -29,7 +29,7 @@ function birthdaycountDown(birthdate) {
     var today = new Date(),
         bd = new Date(birthdate),
 
-        year = today.getYear();
+        year = today.getFullYear();
         bd.setFullYear(year);
     var timecheck = (today.getTime() - bd.getTime());
 
@@ -37,18 +37,18 @@ function birthdaycountDown(birthdate) {
         bd.setFullYear(year + 1);
     }
 
-    var duf = (bd.getTime() - today.getTime()) / (24 * 60 * 60 * 1000),
-        rduf = (bd.getTime() - today.getTime()) % (24 * 60 * 60 * 1000),
+    var duf = (bd.getTime() - today.getTime()) / 86400000,
+        rduf = (bd.getTime() - today.getTime()) % 86400000,
         days = Math.floor(duf),
 
-        huf = rduf / (60 * 60 * 1000),
-        rhuf = rduf % (60 * 60 * 1000),
+        huf = rduf / 3600000,
+        rhuf = rduf % 3600000,
         hours = Math.floor(huf),
 
-        muf = rhuf / (60 * 1000),
-        rmuf = rhuf % (60 * 1000),
+        muf = rhuf / 60000,
+        rmuf = rhuf % 60000,
         minutes = Math.floor(muf);
 
-    return "There are " + days + " day(s), " + hours + " hour(s), and " + minutes + " minute(s) until my next birthday";
+     return "There are " + days + " day(s), " + hours + " hour(s), and " + minutes + " minute(s) until my next birthday";
 
 }
