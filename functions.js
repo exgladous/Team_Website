@@ -21,7 +21,8 @@ function dateMessage() {
     var year = today.getFullYear();
     document.write(" Today date is ", listday[day], " ", listmonth[month], " ", ddate + ", ", year);
 
-    return "Today is " + day + ", " + month + " " + ddate;
+    //return "Today is " + day + ", " + month + " " + ddate;
+
         var day = today.getDay();
         var ddate = today.getDate();
         var listday = ["Sunday", "Monday", "Tuesday", "Wedenesday", "Thursday", "Friday", "Saturday"]
@@ -45,15 +46,9 @@ function birthdaycountDown(birthdate) {
 
         bd = bd.setFullYear(today.getYear() + 1, 0, 21),
 
-    var end = new Date(datestring),
+        end = new Date(birthdate),
         date = today.getDate(),
         datee = end.getDate(),
-
-        day = daylist[today.getDay()],
-        daye = daylist[end.getDay()],
-
-        month = monthlist[today.getMonth()],
-        monthe = monthlist[end.getMonth()],
 
         end = new Date(bd),
 
