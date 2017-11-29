@@ -6,8 +6,6 @@ function randomGreeting() {
     return salutation[rand]
 }
 
-
-
 // 2. Print Date
 
 function dateMessage() {
@@ -20,7 +18,6 @@ function dateMessage() {
     var year = today.getFullYear();
     return "Today is " + listday[day] + ", " + listmonth[month] + " " + ddate + ", " + year
 }
-
 
 // 3. Count Down
 
