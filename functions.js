@@ -1,12 +1,31 @@
 // 1. Random Greeting
+function greeting() {
+    var today = new Date();
+    var hour = today.getHours();
+    var day = today.getDay();
+    if (hour < 10) {
+        if (day == 0 || day == 6) {
+            return "Go back to sleep! Its the weekend!";
+        } else if (day == 1) {
+            return "Ugh, its a Monday monring!";
+        } else {
+            return "Good morning!";
+        }
+    } else if (hour < 18) {
+        if (day == 0 || day == 6) {
+            return "Hope you are having a great weekend!";
+        } else {
+            return "Good Day!";
+        }
 
-function randomGreeting() {
-    var salutation = ["Howdy!", "Greetings!", "Hola!", "Bonjour!", "Take me to your leader!", "!مرحبا", "你好！", "Здравствуйте!", "Sveiki!", "Алло!"];
-    var rand = Math.floor(Math.random() * 10);
-    return salutation[rand]
+    } else {
+        if (day == 0) {
+            return "Enjoy your evening...tomorrow is Monday!"
+        } else {
+            return "Good Evening!";
+        }
+    }
 }
-
-
 
 // 2. Print Date
 
@@ -30,7 +49,7 @@ function birthdaycountDown(birthdate) {
         bd = new Date(birthdate),
 
         year = today.getFullYear();
-        bd.setFullYear(year);
+    bd.setFullYear(year);
     var timecheck = (today.getTime() - bd.getTime());
 
     if (timecheck > 0) {
@@ -49,6 +68,6 @@ function birthdaycountDown(birthdate) {
         rmuf = rhuf % 60000,
         minutes = Math.floor(muf);
 
-     return "There are " + days + " day(s), " + hours + " hour(s), and " + minutes + " minute(s) until my next birthday";
+    return "There are " + days + " day(s), " + hours + " hour(s), and " + minutes + " minute(s) until my next birthday";
 
 }
