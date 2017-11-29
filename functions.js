@@ -16,7 +16,22 @@ function dateMessage() {
     var month = today.getMonth() + 1;
     var listmonth = ["December", "January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November"];
     var year = today.getFullYear();
-    return "Today is " + listday[day] + ", " + listmonth[month] + " " + ddate + ", " + year
+
+    var datestring = ddate.toString();
+    var suffixcheck = datestring.substr(-1);
+
+    if (suffixcheck == 1) {
+        var suffix = "st";
+    } else if (suffixcheck == 2) {
+        var suffix = "nd";
+    } else if (suffixcheck == 3) {
+        var suffix = "rd";
+    } else {
+        var suffix = "th";
+    }
+
+    return "Today is " + listday[day] + ", " + listmonth[month] + " " + ddate + suffix + ", " + year;
+
 }
 
 // 3. Count Down
@@ -27,7 +42,7 @@ function birthdaycountDown(birthdate) {
         bd = new Date(birthdate),
 
         year = today.getFullYear();
-        bd.setFullYear(year);
+    bd.setFullYear(year);
     var timecheck = (today.getTime() - bd.getTime());
 
     if (timecheck > 0) {
@@ -46,12 +61,8 @@ function birthdaycountDown(birthdate) {
         rmuf = rhuf % 60000,
         minutes = Math.floor(muf);
 
-     return "There are " + days + " day(s), " + hours + " hour(s), and " + minutes + " minute(s) until my next birthday.";
+    return "There are " + days + " day(s), " + hours + " hour(s), and " + minutes + " minute(s) until my next birthday.";
 
 }
 
 // 4. Date Based Greeting
-
-function greeting {
-
-}
