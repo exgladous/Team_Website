@@ -83,5 +83,5 @@ function birthdaycountDown(birthdate) {
         minutes = Math.floor(muf);
 
     return "There are " + days + " day(s), " + hours + " hour(s), and " + minutes + " minute(s) until my next birthday";
-    return "There are " + days + " day(s), " + hours + " hour(s), and " + minutes + " minute(s) until my next birthday.";
+
 }
