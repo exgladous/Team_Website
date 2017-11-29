@@ -49,3 +49,9 @@ function birthdaycountDown(birthdate) {
      return "There are " + days + " day(s), " + hours + " hour(s), and " + minutes + " minute(s) until my next birthday.";
 
 }
+
+// 4. Date Based Greeting
+
+function greeting {
+
+}
