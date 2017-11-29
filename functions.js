@@ -82,12 +82,6 @@ function birthdaycountDown(birthdate) {
         rmuf = rhuf % 60000,
         minutes = Math.floor(muf);
 
-<<<<<<< HEAD
     return "There are " + days + " day(s), " + hours + " hour(s), and " + minutes + " minute(s) until my next birthday";
-=======
     return "There are " + days + " day(s), " + hours + " hour(s), and " + minutes + " minute(s) until my next birthday.";
->>>>>>> origin/master
-
 }
-
-// 4. Date Based Greeting
