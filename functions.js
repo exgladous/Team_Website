@@ -34,24 +34,23 @@ function dateMessage() {
     var day = today.getDay();
     var ddate = today.getDate();
     var listday = ["Sunday", "Monday", "Tuesday", "Wedenesday", "Thursday", "Friday", "Saturday"]
-    var month = today.getMonth() + 1;
-    var listmonth = ["December", "January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November"];
+    var month = today.getMonth();
+    var listmonth = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
     var year = today.getFullYear();
 
-    //var datestring = ddate.toString();
-    //var suffixcheck = datestring.substr(-1);
+    var strings = ddate.toString();
+    var suffixcheck = strings.substr(-1);
+    if (suffixcheck == 1) {
+        var fix = "st"
+    } else if (suffixcheck == 2) {
+        var fix = "nd"
+    } else if (suffixcheck == 3) {
+        var fix = "rd"
+    } else {
+        var fix = "th"
+    }
 
-    //if (suffixcheck == 1) {
-    //    var suffix = "st";
-    //} else if (suffixcheck == 2) {
-    //    var suffix = "nd";
-    //} else if (suffixcheck == 3) {
-    //    var suffix = "rd";
-    //} else {
-    //    var suffix = "th";
-    //}
-
-    //return "Today is " + listday[day] + ", " + listmonth[month] + " " + ddate + suffix + ", " + year;
+    return "Today is" + " " + listday[day] + ", " + listmonth[month] + " " + ddate + fix + ", " + year;
 
 }
 
