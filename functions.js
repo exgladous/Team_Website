@@ -1,4 +1,4 @@
-// 1. Random Greeting
+// 1. Date & Time Greeting
 function greeting() {
     var today = new Date();
     var hour = today.getHours();
@@ -9,7 +9,7 @@ function greeting() {
         } else if (day == 1) {
             return "Ugh, its a Monday monring!";
         } else {
-            return "Good morning!";
+            return "Good Morning!";
         }
     } else if (hour < 18) {
         if (day == 0 || day == 6) {
@@ -82,5 +82,5 @@ function birthdaycountDown(birthdate) {
         minutes = Math.floor(muf);
 
     return "There are " + days + " day(s), " + hours + " hour(s), and " + minutes + " minute(s) until my next birthday";
-    return "There are " + days + " day(s), " + hours + " hour(s), and " + minutes + " minute(s) until my next birthday.";
+
 }
