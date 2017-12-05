@@ -81,6 +81,26 @@ function birthdaycountDown(birthdate) {
         rmuf = rhuf % 60000,
         minutes = Math.floor(muf);
 
-    return "There are " + days + " day(s), " + hours + " hour(s), and " + minutes + " minute(s) until my next birthday";
+    if (days == 1) {
+        var dsuffix = "day"
+        var leadingupword = "is"
+    } else {
+        var dsuffix = "days"
+        var leadingupword = "are"
+    }
+
+    if (hours == 1) {
+        var hsuffix = "hour"
+    } else {
+        var hsuffix = "hours"
+    }
+
+    if (minutes == 1) {
+        var msuffix = "minute"
+    } else {
+        var msuffix = "minutes"
+    }
+
+    return "There " + leadingupword + " " + days + " " + dsuffix + ", " + hours + " " + hsuffix + ", and " + minutes + " " + msuffix + " until my next birthday";
 
 }
